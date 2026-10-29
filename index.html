@@ -10,7 +10,7 @@
     />
     <title>Little Tanks — An Artillery Duel</title>
     <link rel="icon" type="image/svg+xml" href="./tank.svg" />
-    <script type="module" crossorigin src="./assets/index-DbyvhmBM.js"></script>
+    <script type="module" crossorigin src="./assets/index-DDMEjxZs.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DDXW1g6V.css">
   </head>
   <body>
@@ -191,6 +191,39 @@
               value="1"
             />
             <small id="tuning-dof-note"></small>
+            <label for="tuning-ao"
+              >Contact shading
+              <output id="tuning-ao-value" for="tuning-ao"></output
+            ></label>
+            <input
+              class="range"
+              id="tuning-ao"
+              type="range"
+              min="0"
+              max="1"
+              step="0.05"
+              value="0.55"
+            />
+            <label for="tuning-environment"
+              >Sky lighting
+              <output
+                id="tuning-environment-value"
+                for="tuning-environment"
+              ></output
+            ></label>
+            <input
+              class="range"
+              id="tuning-environment"
+              type="range"
+              min="0"
+              max="1"
+              step="0.05"
+              value="0.35"
+            />
+            <label class="check-label"
+              ><input id="tuning-shadows" type="checkbox" checked />Soft sun
+              shadows</label
+            >
             <label class="check-label"
               ><input type="checkbox" id="tuning-smooth" checked />Smooth
               landscape shading</label
