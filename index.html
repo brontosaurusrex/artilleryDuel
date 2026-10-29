@@ -10,7 +10,7 @@
     />
     <title>Little Tanks — An Artillery Duel</title>
     <link rel="icon" type="image/svg+xml" href="./tank.svg" />
-    <script type="module" crossorigin src="./assets/index-DDMEjxZs.js"></script>
+    <script type="module" crossorigin src="./assets/index-BCZJ8jD0.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-DDXW1g6V.css">
   </head>
   <body>
@@ -330,7 +330,7 @@
                     <input
                       id="elevation-value"
                       type="number"
-                      min="5"
+                      min="-5"
                       max="85"
                       step="0.1"
                       aria-label="Elevation in degrees"
@@ -341,13 +341,13 @@
                   id="elevation"
                   class="range"
                   type="range"
-                  min="5"
+                  min="-5"
                   max="85"
                   step="0.1"
                   aria-label="Elevation"
                 />
                 <div class="range-labels">
-                  <span>HIGH</span><span>LOW</span>
+                  <span>LOW</span><span>HIGH</span>
                 </div>
               </div>
               <div class="aim-group">
@@ -445,6 +445,10 @@
           <tr>
             <th><kbd>Space</kbd></th>
             <td>Begin / fire</td>
+          </tr>
+          <tr>
+            <th><kbd>Ctrl</kbd> + drag</th>
+            <td>Pan around the battlefield</td>
           </tr>
           <tr>
             <th><kbd>R</kbd></th>
