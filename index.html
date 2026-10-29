@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ecebe1" />
+    <meta
+      name="description"
+      content="A little landscape. A very personal duel. An artillery game for one or two players with 3D tanks, changing winds, and destructible hills."
+    />
+    <title>Little Tanks — An Artillery Duel</title>
+    <link rel="icon" type="image/svg+xml" href="./tank.svg" />
+    <script type="module" crossorigin src="./assets/index-DyVss6Wf.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DDXW1g6V.css">
+  </head>
+  <body>
+    <div id="app">
+      <main class="game-layout">
+        <section class="battlefield" aria-label="Battlefield">
+          <div id="canvas-container"></div>
+          <header class="masthead">
+            <div class="scoreboard" aria-label="Tank health">
+              <div class="player-card red" id="player-0">
+                <span class="player-dot"></span
+                ><span class="player-name">Red<small>PLAYER 01</small></span>
+                <div class="health">
+                  <span><b id="health-0">100</b><small>HP</small></span>
+                  <div class="health-track"><i id="health-bar-0"></i></div>
+                </div>
+              </div>
+              <span class="versus">vs.</span>
+              <div class="player-card blue" id="player-1">
+                <span class="player-dot"></span
+                ><span class="player-name">Blue<small>PLAYER 02</small></span>
+                <div class="health">
+                  <span><b id="health-1">100</b><small>HP</small></span>
+                  <div class="health-track"><i id="health-bar-1"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="hud-tools">
+              <button
+                id="sound-button"
+                class="glass-button"
+                aria-label="Mute sound"
+                aria-pressed="false"
+                title="Sound on — click to mute"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 9h4l5-4v14l-5-4H4Z" />
+                  <path
+                    class="sound-waves"
+                    d="M16 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"
+                  />
+                  <path class="sound-slash" d="m16 9 5 6m0-6-5 6" />
+                </svg>
+                <span id="sound-label">Sound on</span>
+              </button>
+              <button
+                id="demo-button"
+                class="glass-button"
+                aria-pressed="false"
+                title="Toggle AI versus AI demo (D)"
+              >
+                Demo · D
+              </button>
+              <button
+                id="reset-view"
+                class="glass-button"
+                title="Reset camera (R)"
+              >
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M4 7V3m0 4h4M4 7a7 7 0 1 1-1 6" /></svg
+                >Reset view</button
+              ><button
+                id="settings-button"
+                class="glass-button"
+                aria-expanded="false"
+                aria-controls="settings-popover"
+              >
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M3 5h14M3 10h14M3 15h14M7 3v4m6 1v4m-5 1v4" /></svg
+                >Visuals
+              </button>
+              <button
+                class="glass-button"
+                id="help-button"
+                title="Keyboard shortcuts (H)"
+                aria-label="Shortcuts"
+              >
+                ? Shortcuts
+              </button>
+            </div>
+          </header>
+
+          <div class="wind-widget">
+            <div class="wind-compass" aria-hidden="true">
+              <span>VIEW</span
+              ><svg id="wind-arrow" viewBox="0 0 32 32">
+                <path d="m16 5 6 11-6-2-6 2 6-11Zm0 9v13" />
+              </svg>
+            </div>
+            <div>
+              <span class="eyebrow">WIND <span id="wind-direction"></span></span
+              ><strong id="wind-strength"></strong>
+            </div>
+            <span class="wind-note">Relative to your view</span>
+            <div class="fog-readout">
+              <span class="eyebrow">FOG DENSITY</span>
+              <strong id="fog-density"></strong>
+            </div>
+          </div>
+          <div class="scene-top-right" hidden>
+            <span class="live-dot"></span><span id="mode-label">LOCAL DUEL</span
+            ><span class="separator">/</span><span id="seed-label"></span
+            ><span class="separator">/</span><span id="landscape-label"></span>
+          </div>
+          <div class="camera-hint">
+            DRAG TO ORBIT <span>·</span> SCROLL TO ZOOM
+          </div>
+          <div id="settings-popover" class="popover" hidden>
+            <h3>Make yourself comfortable.</h3>
+            <label for="play-mode"
+              >Play mode<select id="play-mode">
+                <option value="single">Single player · easy AI</option>
+                <option value="local">Local · two players</option>
+              </select></label
+            >
+            <label for="landscape"
+              >Battlefield<select id="landscape">
+                <option value="meadow">Meadow &amp; lake</option>
+                <option value="alpine">Alpine hills</option>
+                <option value="desert">Desert oasis</option>
+                <option value="city">City blocks</option>
+                <option value="motorway">Autobahn</option>
+                <option value="river">River crossing</option>
+                <option value="snow">Snowy pine forest</option>
+                <option value="autumn">Autumn countryside</option>
+                <option value="volcanic">Volcanic badlands</option>
+              </select></label
+            >
+            <label for="quality"
+              >Graphics quality<select id="quality">
+                <option value="standard">Standard</option>
+                <option value="low">Low · lighter on your laptop</option>
+              </select></label
+            >
+            <label class="check-label"
+              ><input id="dof" type="checkbox" checked />Soft depth of
+              field</label
+            >
+            <small id="quality-note"
+              >Focus follows the shell during flight.</small
+            >
+            <button class="text-button" id="new-game">New landscape ↗</button>
+          </div>
+          <aside
+            id="tuning-panel"
+            class="popover"
+            aria-label="Visual tuning"
+            hidden
+          >
+            <h3>Visual tuning</h3>
+            <label for="tuning-fog"
+              >Fog density
+              <output id="tuning-fog-value" for="tuning-fog"></output
+            ></label>
+            <input
+              class="range"
+              id="tuning-fog"
+              type="range"
+              min="0"
+              max="0.01"
+              step="0.0001"
+              value="0.0018"
+            />
+            <button class="text-button" id="tuning-fog-auto">
+              Automatic fog
+            </button>
+            <label for="tuning-dof"
+              >Depth of field
+              <output id="tuning-dof-value" for="tuning-dof"></output
+            ></label>
+            <input
+              class="range"
+              id="tuning-dof"
+              type="range"
+              min="0"
+              max="2"
+              step="0.05"
+              value="1"
+            />
+            <small id="tuning-dof-note"></small>
+            <label for="tuning-lens"
+              >Lens · full-frame
+              <output id="tuning-lens-value" for="tuning-lens"></output
+            ></label>
+            <input
+              class="range"
+              id="tuning-lens"
+              type="range"
+              min="16"
+              max="135"
+              step="1"
+              value="38"
+            />
+            <button class="text-button" id="tuning-lens-auto">
+              Default lens
+            </button>
+            <button class="text-button" id="tuning-close">
+              Close · E / Esc
+            </button>
+          </aside>
+          <div class="handoff" id="handoff">
+            <div class="handoff-card" id="handoff-card">
+              <span class="eyebrow" id="handoff-label"
+                >TWO PLAYERS · ONE BATTLEFIELD</span
+              >
+              <h1 id="handoff-title">Small tanks.<br />High stakes.</h1>
+              <p id="handoff-description">
+                Take turns. Read the wind.<br />Leave your mark on the
+                landscape.
+              </p>
+              <button class="primary-button" id="ready-button">
+                Begin duel <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+          <div class="result" id="result" hidden>
+            <div class="handoff-card">
+              <span class="eyebrow">THE DUST HAS SETTLED</span>
+              <h1 id="result-title"></h1>
+              <p id="result-description"></p>
+              <button class="primary-button" id="rematch">
+                Rematch <span aria-hidden="true">↗</span></button
+              ><button class="text-button" id="result-new">
+                Find a new landscape
+              </button>
+            </div>
+          </div>
+          <div
+            id="graphics-error"
+            class="graphics-error"
+            role="alert"
+            hidden
+          ></div>
+          <aside class="control-panel" aria-label="Shot controls">
+            <div class="control-heading">
+              <h2 id="active-name">Red's move.</h2>
+              <div class="turn-heading">
+                <span id="turn-label">TURN 01</span
+                ><span id="phase-label">GET READY</span>
+              </div>
+            </div>
+            <fieldset id="aim-controls" disabled>
+              <div class="aim-group">
+                <div class="control-row">
+                  <label for="bearing">Direction</label>
+                  <div class="number-input">
+                    <input
+                      id="bearing-value"
+                      type="number"
+                      min="0"
+                      max="359.9"
+                      step="0.1"
+                      aria-label="Direction in degrees"
+                    /><span>°</span>
+                  </div>
+                </div>
+                <input
+                  id="bearing"
+                  class="range"
+                  type="range"
+                  min="0"
+                  max="359.9"
+                  step="0.1"
+                  aria-label="Direction"
+                />
+                <div class="range-labels">
+                  <span>0° N</span><span>180° S</span><span>359°</span>
+                </div>
+              </div>
+              <div class="aim-group">
+                <div class="control-row">
+                  <label for="elevation">Elevation</label>
+                  <div class="number-input">
+                    <input
+                      id="elevation-value"
+                      type="number"
+                      min="5"
+                      max="85"
+                      step="0.1"
+                      aria-label="Elevation in degrees"
+                    /><span>°</span>
+                  </div>
+                </div>
+                <input
+                  id="elevation"
+                  class="range"
+                  type="range"
+                  min="5"
+                  max="85"
+                  step="0.1"
+                  aria-label="Elevation"
+                />
+                <div class="range-labels">
+                  <span>HIGH</span><span>LOW</span>
+                </div>
+              </div>
+              <div class="aim-group">
+                <div class="control-row">
+                  <label for="power">Power</label>
+                  <div class="number-input">
+                    <input
+                      id="power-value"
+                      type="number"
+                      min="0"
+                      max="100"
+                      step="0.1"
+                      aria-label="Power percent"
+                    /><span>%</span>
+                  </div>
+                </div>
+                <input
+                  id="power"
+                  class="range"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  aria-label="Power"
+                />
+                <div class="range-labels">
+                  <span>GENTLE NUDGE</span><span>ALL IN</span>
+                </div>
+              </div>
+              <button class="fire-button" id="fire-button">
+                Fire shot <span aria-hidden="true">↗</span>
+              </button>
+            </fieldset>
+            <div class="route-tools" id="route-tools">
+              <button
+                id="route-button"
+                class="route-action"
+                disabled
+                title="Draw a tank route (M)"
+              >
+                Draw route · M
+              </button>
+              <button id="route-confirm" class="route-action" hidden>
+                Confirm route ↵
+              </button>
+              <button id="route-cancel" class="route-action" hidden>
+                Cancel
+              </button>
+              <button id="route-halt" class="route-action" hidden>
+                Halt route
+              </button>
+              <span id="route-status" role="status"></span>
+            </div>
+            <div
+              class="shot-report"
+              id="shot-report"
+              role="status"
+              aria-live="polite"
+            ></div>
+          </aside>
+        </section>
+      </main>
+    </div>
+    <dialog id="help-dialog">
+      <button
+        class="icon-button close-help"
+        id="close-help"
+        aria-label="Close instructions"
+      >
+        ×
+      </button>
+      <h2>Keyboard shortcuts</h2>
+      <table class="shortcut-table" aria-label="Keyboard shortcuts">
+        <tbody>
+          <tr>
+            <th><kbd>←</kbd> <kbd>→</kbd></th>
+            <td>Direction</td>
+          </tr>
+          <tr>
+            <th><kbd>↑</kbd> <kbd>↓</kbd></th>
+            <td>Lower / raise gun</td>
+          </tr>
+          <tr>
+            <th><kbd>+</kbd> / <kbd>=</kbd></th>
+            <td>Increase power</td>
+          </tr>
+          <tr>
+            <th><kbd>−</kbd> / <kbd>'</kbd></th>
+            <td>Reduce power</td>
+          </tr>
+          <tr>
+            <th><kbd>Shift</kbd> + aiming key</th>
+            <td>Larger adjustment</td>
+          </tr>
+          <tr>
+            <th><kbd>Space</kbd></th>
+            <td>Begin / fire</td>
+          </tr>
+          <tr>
+            <th><kbd>R</kbd></th>
+            <td>Reset view</td>
+          </tr>
+          <tr>
+            <th><kbd>D</kbd></th>
+            <td>Toggle AI demo</td>
+          </tr>
+          <tr>
+            <th><kbd>M</kbd></th>
+            <td>Draw a tank route</td>
+          </tr>
+          <tr>
+            <th><kbd>Enter</kbd></th>
+            <td>Confirm route</td>
+          </tr>
+          <tr>
+            <th><kbd>H</kbd> / <kbd>?</kbd></th>
+            <td>Keyboard shortcuts</td>
+          </tr>
+          <tr>
+            <th><kbd>Esc</kbd></th>
+            <td>Close / cancel route</td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="primary-button" id="help-done">
+        Done <span aria-hidden="true">↗</span>
+      </button>
+    </dialog>
+  </body>
+</html>
