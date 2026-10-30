@@ -10,8 +10,8 @@
     />
     <title>Cocky Tanks</title>
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-DkGZh4kC.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BTgcUceZ.css">
+    <script type="module" crossorigin src="./assets/index-BCm3N2-P.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DSAd63EP.css">
   </head>
   <body>
     <div id="app">
@@ -85,6 +85,18 @@
                 >Visuals
               </button>
               <button
+                id="fx-button"
+                class="glass-button"
+                aria-expanded="false"
+                aria-controls="fx-popover"
+              >
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path
+                    d="m4 16 9-12 3 3-12 9Zm0-13v4M2 5h4m10 7v5m-2-2h4"
+                  /></svg
+                >FX
+              </button>
+              <button
                 class="glass-button"
                 id="help-button"
                 title="Keyboard shortcuts (H)"
@@ -98,6 +110,12 @@
             </div>
           </header>
 
+          <aside
+            id="fx-popover"
+            class="glass"
+            aria-label="FX mixer"
+            hidden
+          ></aside>
           <div class="wind-widget">
             <div class="wind-compass" aria-hidden="true">
               <span>VIEW</span
