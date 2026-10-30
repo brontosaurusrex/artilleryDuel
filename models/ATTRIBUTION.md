@@ -1,4 +1,12 @@
-# Tank model
+# Tank models
+
+## Cocky Tank
+
+`cocky-tank.glb` is the game's original generated tank, edited in Blender for
+Cocky Tanks. It includes the custom sloped hull, hollow muzzle, fitted side
+armour and curved ribbed mudguards. It is independent of the imported T-55 asset.
+
+## Imported T-55
 
 The T-55 mesh is based on “Tank-T55 toy tank” by EveryThing-Store, CGTrader model 4124545: https://www.cgtrader.com/3d-models/military/military-vehicle/tank-t55-4f536737-2dbc-489f-a684-45df3a5cca05
 
