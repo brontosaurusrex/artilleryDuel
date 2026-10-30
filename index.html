@@ -10,7 +10,7 @@
     />
     <title>Cocky Tanks</title>
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-CemHW6Lj.js"></script>
+    <script type="module" crossorigin src="./assets/index-C9jkdpYj.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-BTgcUceZ.css">
   </head>
   <body>
@@ -306,7 +306,11 @@
             <fieldset id="aim-controls" disabled>
               <div class="aim-group">
                 <div class="control-row">
-                  <label for="bearing">Direction</label>
+                  <label
+                    for="bearing"
+                    title="Rotation relative to the hull; 0° points straight ahead"
+                    >Rotation</label
+                  >
                   <div class="number-input">
                     <input
                       id="bearing-value"
@@ -314,7 +318,7 @@
                       min="0"
                       max="359.9"
                       step="0.1"
-                      aria-label="Direction in degrees"
+                      aria-label="Rotation relative to tank in degrees"
                     /><span>°</span>
                   </div>
                 </div>
@@ -325,23 +329,27 @@
                   min="0"
                   max="359.9"
                   step="0.1"
-                  aria-label="Direction"
+                  aria-label="Rotation"
                 />
                 <div class="range-labels">
-                  <span>0° N</span><span>180° S</span><span>359°</span>
+                  <span>0° FRONT</span><span>180° REAR</span><span>360°</span>
                 </div>
               </div>
               <div class="aim-group">
                 <div class="control-row">
-                  <label for="elevation">Elevation</label>
+                  <label
+                    for="elevation"
+                    title="Gun elevation relative to the hull"
+                    >Elevation</label
+                  >
                   <div class="number-input">
                     <input
                       id="elevation-value"
                       type="number"
-                      min="-5"
+                      min="-12"
                       max="85"
                       step="0.1"
-                      aria-label="Elevation in degrees"
+                      aria-label="Elevation relative to tank in degrees"
                     /><span>°</span>
                   </div>
                 </div>
@@ -349,7 +357,7 @@
                   id="elevation"
                   class="range"
                   type="range"
-                  min="-5"
+                  min="-12"
                   max="85"
                   step="0.1"
                   aria-label="Elevation"
@@ -432,7 +440,7 @@
         <tbody>
           <tr>
             <th><kbd>←</kbd> <kbd>→</kbd></th>
-            <td>Direction</td>
+            <td>Rotate turret</td>
           </tr>
           <tr>
             <th><kbd>↑</kbd> <kbd>↓</kbd></th>
