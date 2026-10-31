@@ -1,0 +1,7 @@
+River Crossing centre-line reference
+Approximate curve derived from classified water in GURS / CLSS 2023-2025
+tile GKOT_456_109, then compressed and smoothed for the procedural game map.
+The game contains only a short curve description, not the scanned landscape,
+buildings, vegetation, imagery or raw point cloud.
+Source viewer: https://clss.si/
+Dataset: https://www.e-prostor.gov.si/podrocja/drzavni-topografski-sistem/daljinsko-zaznavanje/
