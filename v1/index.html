@@ -10,8 +10,8 @@
     />
     <title>Cocky Tanks</title>
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-B50UvA2k.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-C46uUOeo.css">
+    <script type="module" crossorigin src="./assets/index-CkRJxa9c.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BVGH7dnU.css">
   </head>
   <body>
     <div id="app">
@@ -154,12 +154,18 @@
             <label for="scenery-landscape"
               >Biome<select id="scenery-landscape"></select
             ></label>
-            <button class="text-button" id="scenery-regenerate">
-              New map in this biome ↗
-            </button>
-            <button class="text-button" id="scenery-random">
-              Random biome ↗
-            </button>
+            <div class="scenery-actions">
+              <button
+                class="text-button"
+                id="scenery-regenerate"
+                title="New map in this biome"
+              >
+                New map <span aria-hidden="true">↗</span>
+              </button>
+              <button class="text-button" id="scenery-random">
+                Random biome <span aria-hidden="true">↗</span>
+              </button>
+            </div>
           </div>
           <div id="settings-popover" class="popover" hidden>
             <h3>Visuals</h3>
@@ -352,6 +358,9 @@
               <button class="primary-button" id="ready-button">
                 Begin duel <span aria-hidden="true">↗</span>
               </button>
+              <button class="text-button" id="handoff-random">
+                Random biome <span aria-hidden="true">↗</span>
+              </button>
             </div>
           </div>
           <div class="result" id="result" hidden>
@@ -362,7 +371,7 @@
               <button class="primary-button" id="rematch">
                 Rematch <span aria-hidden="true">↗</span></button
               ><button class="text-button" id="result-new">
-                Find a new landscape
+                Random biome <span aria-hidden="true">↗</span>
               </button>
             </div>
           </div>
