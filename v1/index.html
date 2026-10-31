@@ -10,7 +10,7 @@
     />
     <title>Cocky Tanks</title>
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-OFso8LEQ.js"></script>
+    <script type="module" crossorigin src="./assets/index-B50UvA2k.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-C46uUOeo.css">
   </head>
   <body>
@@ -75,6 +75,17 @@
                   <path d="M4 7V3m0 4h4M4 7a7 7 0 1 1-1 6" /></svg
                 >Reset view</button
               ><button
+                id="scenery-button"
+                class="glass-button"
+                aria-label="Change scenery"
+                title="Change scenery"
+                aria-expanded="false"
+                aria-controls="scenery-popover"
+              >
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M2 16 8 5l4 7 3-5 4 9ZM6 9l2 2 2-2" /></svg
+                >Scenery</button
+              ><button
                 id="settings-button"
                 class="glass-button"
                 aria-expanded="false"
@@ -138,6 +149,18 @@
             ><span class="separator">/</span><span id="landscape-label"></span>
           </div>
           <div class="camera-hint" hidden></div>
+          <div id="scenery-popover" class="popover" hidden>
+            <h3>Change scenery</h3>
+            <label for="scenery-landscape"
+              >Biome<select id="scenery-landscape"></select
+            ></label>
+            <button class="text-button" id="scenery-regenerate">
+              New map in this biome ↗
+            </button>
+            <button class="text-button" id="scenery-random">
+              Random biome ↗
+            </button>
+          </div>
           <div id="settings-popover" class="popover" hidden>
             <h3>Visuals</h3>
             <h4>Match</h4>
@@ -158,6 +181,8 @@
                 <option value="snow">Snowy pine forest</option>
                 <option value="autumn">Autumn countryside</option>
                 <option value="volcanic">Volcanic badlands</option>
+                <option value="valley">Winding valley</option>
+                <option value="valley2">Winding valley 2</option>
               </select></label
             >
             <button class="text-button" id="new-game">New landscape ↗</button>
