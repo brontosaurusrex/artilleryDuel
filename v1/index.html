@@ -10,8 +10,8 @@
     />
     <title>Cocky Tanks</title>
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-CJDxpi6E.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DlDSZhXf.css">
+    <script type="module" crossorigin src="./assets/index-D6KEZRGV.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-5cKbLt33.css">
   </head>
   <body>
     <div id="app">
@@ -35,6 +35,15 @@
                 <div class="health">
                   <span><b id="health-1">100</b><small>HP</small></span>
                   <div class="health-track"><i id="health-bar-1"></i></div>
+                </div>
+              </div>
+              <span class="versus" id="green-versus">vs.</span>
+              <div class="player-card green" id="player-2">
+                <span class="player-dot"></span
+                ><span class="player-name">Green<small>PLAYER 03</small></span>
+                <div class="health">
+                  <span><b id="health-2">100</b><small>HP</small></span>
+                  <div class="health-track"><i id="health-bar-2"></i></div>
                 </div>
               </div>
             </div>
@@ -189,7 +198,6 @@
                 <option value="volcanic">Volcanic badlands</option>
                 <option value="valley">Winding valley</option>
                 <option value="valley2">Winding valley 2</option>
-                <option value="canyon">Canyon caves</option>
               </select></label
             >
             <button class="text-button" id="new-game">New landscape ↗</button>
@@ -293,6 +301,17 @@
               <label class="check-label"
                 ><input type="checkbox" id="tuning-smooth" checked />Smooth
                 landscape shading</label
+              >
+              <label class="check-label"
+                ><input
+                  type="checkbox"
+                  id="tuning-decals"
+                  checked
+                />Decals</label
+              >
+              <label class="check-label"
+                ><input type="checkbox" id="tuning-trees" checked />Smooth
+                trees</label
               >
               <h4>Camera</h4>
               <label class="check-label"
