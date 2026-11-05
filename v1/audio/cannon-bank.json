@@ -1,0 +1,30 @@
+{
+  "description": "Original procedural cannon samples; no third-party recordings.",
+  "generator": "tools/generate_cannon_audio.py",
+  "samples": [
+    {
+      "file": "cannon-v1-01.opus",
+      "duration": 2.65,
+      "sampleRate": 48000,
+      "channels": 1,
+      "sha256": "99c00c1806bdf16c4e9056c33b2ee69ed223ba5070cb2a835c8fdb8f3ce1ba6a",
+      "bytes": 25894
+    },
+    {
+      "file": "cannon-v1-02.opus",
+      "duration": 2.8,
+      "sampleRate": 48000,
+      "channels": 1,
+      "sha256": "e6ab969ba2e5ceb59efa53a41e2a16639314d5c2356562d438d6311f374f5af9",
+      "bytes": 27662
+    },
+    {
+      "file": "cannon-v1-03.opus",
+      "duration": 2.55,
+      "sampleRate": 48000,
+      "channels": 1,
+      "sha256": "4f9b0c269c253f18165b9e48316d7fdfbdcfd34265bdeea9051d0c0cb52007d9",
+      "bytes": 25049
+    }
+  ]
+}
