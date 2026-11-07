@@ -1,0 +1,30 @@
+{
+  "description": "Original layered incoming-shell turbulence; no third-party recordings.",
+  "generator": "tools/generate_incoming_audio.py",
+  "samples": [
+    {
+      "file": "incoming-v1-01.opus",
+      "duration": 1,
+      "sampleRate": 48000,
+      "channels": 1,
+      "sha256": "9b7e396cf70bfc41baa92772df530cabdc4411858bba93327f586a957af32495",
+      "bytes": 11639
+    },
+    {
+      "file": "incoming-v1-02.opus",
+      "duration": 1,
+      "sampleRate": 48000,
+      "channels": 1,
+      "sha256": "79c9d9ef0ee58247e81a566081144b921028f58ce4b7496a3e79314b7175e1e2",
+      "bytes": 11786
+    },
+    {
+      "file": "incoming-v1-03.opus",
+      "duration": 1,
+      "sampleRate": 48000,
+      "channels": 1,
+      "sha256": "b8e61697ae272257ec9cf35d51f09772a821f614e477096b25c555cd15b7091d",
+      "bytes": 11656
+    }
+  ]
+}
