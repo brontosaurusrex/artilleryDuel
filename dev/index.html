@@ -10,7 +10,7 @@
     />
     <title>Cocky Tanks</title>
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-BJZMyf7H.js"></script>
+    <script type="module" crossorigin src="./assets/index-DhsH6wXj.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-Olj5KHod.css">
   </head>
   <body>
@@ -535,13 +535,11 @@
               <button id="route-halt" class="route-action" hidden>
                 Halt route
               </button>
-              <button
-                id="camera-mode"
-                class="route-action"
-                aria-pressed="false"
-              >
-                Overview cam
-              </button>
+              <select id="camera-mode" class="route-action" aria-label="Camera view" title="Choose camera view">
+                <option value="overview">Overview cam</option>
+                <option value="view">View cam</option>
+                <option value="bullet" selected>Bullet cam</option>
+              </select>
               <span id="route-status" role="status"></span>
             </div>
             <div
