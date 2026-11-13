@@ -1,0 +1,25 @@
+{
+  "title": "Steam locomotive",
+  "author": "chungus43A",
+  "source": "https://freesound.org/people/chungus43A/sounds/705396/",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "sourceDescription": "AI generated steam whistle and locomotive starting to move.",
+  "sourceSha256": "885ab9895f0d202a90ec84fa17e69b7b441efd2428b04d2b9f70c8a2e5527f8c",
+  "edits": "Mono excerpts, sub-bass filtering, normalization, crossfaded running loop, whistle fades.",
+  "generator": "tools/prepare_steam_audio.py",
+  "samples": [
+    {
+      "file": "steam-running-v2.opus",
+      "duration": 6.38,
+      "bytes": 56763,
+      "sha256": "4032473c46f93fd5ed20c6d676ab6ed41cc5d95d8f64bfea7f129d3ad9325b71"
+    },
+    {
+      "file": "steam-whistle-v2.opus",
+      "duration": 3.95,
+      "bytes": 40211,
+      "sha256": "02d44170557170a4cc55ae56c8ae5c374babf3a1370b6bbe8c1e210b34381977"
+    }
+  ]
+}
