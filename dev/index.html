@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="game-loading">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +10,16 @@
     />
     <title>Cocky Tanks</title>
     <link rel="icon" href="data:," />
-    <script type="module" crossorigin src="./assets/index-xGifL5i2.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-VmDdpLk9.css">
+    <style>html.game-loading{background:#39484a}html.game-loading body{margin:0}html.game-loading body>:not(#game-loading){visibility:hidden}#game-loading{z-index:2147483647;color:#171717;background:#39484a;place-items:center;font:20px/1.4 monospace;display:grid;position:fixed;inset:0}#game-loading>div{background:#aaa;border:2px solid #444;border-color:#eee #444 #444 #eee;width:min(320px,100vw - 64px);padding:8px;box-shadow:5px 5px #202727}#game-loading strong{color:#fff;font:inherit;background:#285b86;padding:5px 9px;display:block}#game-loading p{margin:20px 10px}#game-loading .loading-pulse{background:#777;height:4px;margin:10px;overflow:hidden}#game-loading .loading-pulse:after{content:"";background:#eee;width:35%;height:100%;animation:1.6s ease-in-out infinite alternate loading-pulse;display:block}@keyframes loading-pulse{to{transform:translate(185%)}}@media (prefers-reduced-motion:reduce){#game-loading .loading-pulse:after{animation:none}}</style>
+    <script>
+      addEventListener('error',function(e){if(!document.documentElement.classList.contains('game-loading'))return;if(e.message||['SCRIPT','LINK'].includes(e.target?.tagName)){var p=document.querySelector('#game-loading p');if(p)p.textContent='Could not load the game. Please reload the page.'}},true);
+    </script>
+    <script type="module" crossorigin src="./assets/index-D2kZwo3b.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BKmz2PRh.css">
   </head>
-  <body>
+  <body aria-busy="true">
+    <div id="game-loading" role="status" aria-live="polite"><div><strong>Cocky Tanks</strong><p>Loading battlefield…</p><div class="loading-pulse" aria-hidden="true"></div><noscript>Enable JavaScript to play.</noscript></div></div>
+
     <div id="app">
       <main class="game-layout">
         <section class="battlefield" aria-label="Battlefield">

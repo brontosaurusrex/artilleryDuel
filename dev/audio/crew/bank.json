@@ -1,0 +1,418 @@
+{
+  "version": 1,
+  "voice": "B commander crew",
+  "synthetic": true,
+  "license": "Apache-2.0",
+  "models": [
+    "Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "Qwen3-TTS-12Hz-1.7B-Base",
+    "Qwen3-TTS-12Hz-0.6B-Base"
+  ],
+  "source": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "processing": "Voice-matched takes; B radio filtering, compression, squelch, chirps, static and brief dropouts. -22 LUFS.",
+  "referenceHashes": {
+    "commander": "299591843a582022e8e1189b2f935080e013095044b8d3bdc554d2c938e86cf1",
+    "urgent": "fc09c44bcdc3e44a22be6297083853dd4d82a60d4d65ba5f645894596b7f99cc"
+  },
+  "pendingRecordings": [],
+  "clips": {
+    "hit": {
+      "file": "hit-b-v1.opus",
+      "text": "Hit. Still operational.",
+      "duration": 2.39,
+      "sha256": "2671914facb68a6170f28dfb051debf20bc2f0e60f0b616e17ac1fa72752acea"
+    },
+    "kill-direct": {
+      "file": "kill-direct-b-v1.opus",
+      "text": "Direct hit! Target destroyed!",
+      "duration": 3.316875,
+      "sha256": "f395b4ab590d7e02a5d786e9e24dd22792f3a2f83a51778ee3262721df01e60a"
+    },
+    "artillery": {
+      "file": "artillery-b-v1.opus",
+      "text": "Incoming artillery! Move, move!",
+      "duration": 3.19,
+      "sha256": "8f05696c971002fd39bbdc9fd4fa81b60570836ff871006bfed4512f75c15f40"
+    },
+    "kill": {
+      "file": "kill-b-v1.opus",
+      "text": "Target destroyed.",
+      "duration": 1.751,
+      "sha256": "c6e5ce96215cfc0161bd1ab52b3fe8159c4cd05cadd3450d7699e55fd8df869a"
+    },
+    "hurt": {
+      "file": "hurt-b-v1.opus",
+      "text": "We're hit! Get us into cover!",
+      "duration": 2.29,
+      "sha256": "1e1b703fc7b82cef6697b183439f248bf138c55051a7954b6335ea1c5e9fbc84"
+    },
+    "critical": {
+      "file": "critical-b-v1.opus",
+      "text": "Bad hit! Get us out of here!",
+      "duration": 1.97,
+      "sha256": "7821d455c797787c06e43904dfb3d598764aea5872d1da7a9f8a62de6147370e"
+    },
+    "smoke": {
+      "file": "smoke-b-v1.opus",
+      "text": "Smoke out!",
+      "duration": 1.4,
+      "sha256": "02ee6ee658f606040e10c7d588e6c3c528427c4d0b3d350ab3c8727d0d45e065"
+    },
+    "train": {
+      "file": "train-b-v1.opus",
+      "text": "Train coming! Clear the tracks!",
+      "duration": 2.29,
+      "sha256": "e368c31cc6629d670377d3e8835d07a20f07ec50d80c1cfa123326fc8451b417"
+    },
+    "spot-red-1": {
+      "file": "spot-red-1-b-v1.opus",
+      "text": "Red tank at one o'clock.",
+      "duration": 2.44,
+      "sha256": "913e4b59cb5fe21b30e393f39608d67040fa72086917656593a789ca3b74774f"
+    },
+    "spot-red-2": {
+      "file": "spot-red-2-b-v1.opus",
+      "text": "Red tank at two o'clock.",
+      "duration": 2.41,
+      "sha256": "1ae6ed5210831d3d09ef041aedef7cb140110996d619a6e12f08d3927ac14695"
+    },
+    "spot-red-3": {
+      "file": "spot-red-3-b-v1.opus",
+      "text": "Red tank at three o'clock.",
+      "duration": 2.33,
+      "sha256": "68094dc31ab0bc3716047e9ed4d39c97a1e4e9415f7b3a6f3c3c1960237ba0c1"
+    },
+    "spot-red-4": {
+      "file": "spot-red-4-b-v1.opus",
+      "text": "Red tank at four o'clock.",
+      "duration": 2.28,
+      "sha256": "6fef6a5098a8e95e254f7a67737e273bdad53ee1aba9cfc048889e0cfc5fd300"
+    },
+    "spot-red-5": {
+      "file": "spot-red-5-b-v1.opus",
+      "text": "Red tank at five o'clock.",
+      "duration": 2.36,
+      "sha256": "40d4fc586ea142d519f2cd1fb5578185b630e11e48674dff08e3b225e2e68c18"
+    },
+    "spot-red-6": {
+      "file": "spot-red-6-b-v1.opus",
+      "text": "Red tank at six o'clock.",
+      "duration": 2.44,
+      "sha256": "17cfcf349ca1c5611a61030a86da8bd8c8f762158df2699757522b48a4c63046"
+    },
+    "spot-red-7": {
+      "file": "spot-red-7-b-v1.opus",
+      "text": "Red tank at seven o'clock.",
+      "duration": 2.44,
+      "sha256": "af579ce29e176fd2d8de40db7ccaf6a4832dd5400201940a2eea56ae47d9a403"
+    },
+    "spot-red-8": {
+      "file": "spot-red-8-b-v1.opus",
+      "text": "Red tank at eight o'clock.",
+      "duration": 2.43,
+      "sha256": "cc57219446dfe6ef7a9b98c4b1b5dd6ce5d32d6f4c556715b08468e4c14e4c12"
+    },
+    "spot-red-9": {
+      "file": "spot-red-9-b-v1.opus",
+      "text": "Red tank at nine o'clock.",
+      "duration": 2.44,
+      "sha256": "28f1912d789b34ad16f1da0502ea6202b07e977e6a1f8d2bc7f7cfdf6c2a5402"
+    },
+    "spot-red-10": {
+      "file": "spot-red-10-b-v1.opus",
+      "text": "Red tank at ten o'clock.",
+      "duration": 2.44,
+      "sha256": "a3ac3303b85f03ae8da442edd7da6a07e7617a6c2a7673cc36fb9ebfa7da002b"
+    },
+    "spot-red-11": {
+      "file": "spot-red-11-b-v1.opus",
+      "text": "Red tank at eleven o'clock.",
+      "duration": 2.56,
+      "sha256": "371481e0b8be202a81b26f46ef0c598611d358e1b72737cd4cf3adede5548154"
+    },
+    "spot-red-12": {
+      "file": "spot-red-12-b-v1.opus",
+      "text": "Red tank at twelve o'clock.",
+      "duration": 2.28,
+      "sha256": "adee111050e8fc03460adee16e0459a33fa8d3d1e70f0a0db19b118b8df8c4f9"
+    },
+    "spot-blue-1": {
+      "file": "spot-blue-1-b-v1.opus",
+      "text": "Blue tank at one o'clock.",
+      "duration": 2.56,
+      "sha256": "32297f812a117ea9178b0d46131acd7d34912158a989e0d5ac61ba3f0def8f5e"
+    },
+    "spot-blue-2": {
+      "file": "spot-blue-2-b-v1.opus",
+      "text": "Blue tank at two o'clock.",
+      "duration": 2.53,
+      "sha256": "e51a16058378445096cc75c9ec5e8e05fb65132240a3be1c5cfde08e2a68cde9"
+    },
+    "spot-blue-3": {
+      "file": "spot-blue-3-b-v1.opus",
+      "text": "Blue tank at three o'clock.",
+      "duration": 2.45,
+      "sha256": "a0f4e686593f508277c7a7562c401fc1d4deaeca9743a0ea3472aa76274660f3"
+    },
+    "spot-blue-4": {
+      "file": "spot-blue-4-b-v1.opus",
+      "text": "Blue tank at four o'clock.",
+      "duration": 2.4,
+      "sha256": "22916b8d2145fd796e20cbb46042a11dcd574ad3611ffc592f10dd516ca13c6d"
+    },
+    "spot-blue-5": {
+      "file": "spot-blue-5-b-v1.opus",
+      "text": "Blue tank at five o'clock.",
+      "duration": 2.48,
+      "sha256": "66c047fb3675ccdd18eb94061502b7dee33e83602e953476ce53816761677aac"
+    },
+    "spot-blue-6": {
+      "file": "spot-blue-6-b-v1.opus",
+      "text": "Blue tank at six o'clock.",
+      "duration": 2.56,
+      "sha256": "dec6c3c39a9419df28e4237333a0b3cd85f935a640375180eed98179c6a7749d"
+    },
+    "spot-blue-7": {
+      "file": "spot-blue-7-b-v1.opus",
+      "text": "Blue tank at seven o'clock.",
+      "duration": 2.56,
+      "sha256": "3d051fc0858b353058f014dbc1f67d5940db45cf3071c92d7642ec9ca902a4a2"
+    },
+    "spot-blue-8": {
+      "file": "spot-blue-8-b-v1.opus",
+      "text": "Blue tank at eight o'clock.",
+      "duration": 2.55,
+      "sha256": "b56edff606f1d91c58832c219b52b02cb5b8dbb0f9f5fa4e31a3fd8dec430679"
+    },
+    "spot-blue-9": {
+      "file": "spot-blue-9-b-v1.opus",
+      "text": "Blue tank at nine o'clock.",
+      "duration": 2.56,
+      "sha256": "fe9106f87a2dbbf0bb3d57628326f44acef889e18d6f32dd589d50fb51259235"
+    },
+    "spot-blue-10": {
+      "file": "spot-blue-10-b-v1.opus",
+      "text": "Blue tank at ten o'clock.",
+      "duration": 2.56,
+      "sha256": "2c3ea5172a86051cdb9ff702d648718e0f894e2a32ac4706a58b7577d2ad050f"
+    },
+    "spot-blue-11": {
+      "file": "spot-blue-11-b-v1.opus",
+      "text": "Blue tank at eleven o'clock.",
+      "duration": 2.68,
+      "sha256": "9e496496adcf42ccbdcc406597144e61260ca0da252a8d30f927f9b07e1776d9"
+    },
+    "spot-blue-12": {
+      "file": "spot-blue-12-b-v1.opus",
+      "text": "Blue tank at twelve o'clock.",
+      "duration": 2.4,
+      "sha256": "391e037b92c11b4b42d1c70d789ade3a1c7b8abe3a60468974923d6fb2b18552"
+    },
+    "spot-yellow-1": {
+      "file": "spot-yellow-1-b-v1.opus",
+      "text": "Yellow tank at one o'clock.",
+      "duration": 2.66,
+      "sha256": "2847cbefa3202f5ef985d50b919f44cb523d0b4c103157bf0747b12299712449"
+    },
+    "spot-yellow-2": {
+      "file": "spot-yellow-2-b-v1.opus",
+      "text": "Yellow tank at two o'clock.",
+      "duration": 2.63,
+      "sha256": "b5f8d60ab677427f7ab1beceba49c51cac1b34d492cedad9ae1100fc75d2bb3e"
+    },
+    "spot-yellow-3": {
+      "file": "spot-yellow-3-b-v1.opus",
+      "text": "Yellow tank at three o'clock.",
+      "duration": 2.55,
+      "sha256": "daf01dd98ffe9ef78091d741c5195fda9bcedf43bf1e3ac9691f2ad64922cf27"
+    },
+    "spot-yellow-4": {
+      "file": "spot-yellow-4-b-v1.opus",
+      "text": "Yellow tank at four o'clock.",
+      "duration": 2.5,
+      "sha256": "9eba0e185413204348b0cbff77019a5aabbd6f94b5eb500ce2ac92b2b22cd8ba"
+    },
+    "spot-yellow-5": {
+      "file": "spot-yellow-5-b-v1.opus",
+      "text": "Yellow tank at five o'clock.",
+      "duration": 2.58,
+      "sha256": "2f7294f8e0610526fa9be125a0d4fa2b9378c5a33873bd0b76de0e0e27f5cce2"
+    },
+    "spot-yellow-6": {
+      "file": "spot-yellow-6-b-v1.opus",
+      "text": "Yellow tank at six o'clock.",
+      "duration": 2.66,
+      "sha256": "3d987501d61c448f7d799203ed712a635ad76397e14f013b31eba285105c4090"
+    },
+    "spot-yellow-7": {
+      "file": "spot-yellow-7-b-v1.opus",
+      "text": "Yellow tank at seven o'clock.",
+      "duration": 2.66,
+      "sha256": "9008b3ffb2e54035991aef9baa9b52d7d3bd7ec4e2c66f3500d7f1354c9f6d1c"
+    },
+    "spot-yellow-8": {
+      "file": "spot-yellow-8-b-v1.opus",
+      "text": "Yellow tank at eight o'clock.",
+      "duration": 2.65,
+      "sha256": "36ea8772d0db1dbf52c3781f2dc1c7946b7dce0999c8a0bf63559edc1917cf25"
+    },
+    "spot-yellow-9": {
+      "file": "spot-yellow-9-b-v1.opus",
+      "text": "Yellow tank at nine o'clock.",
+      "duration": 2.66,
+      "sha256": "6af98cf9b2f33182ae61d9556d1fe736cf5dd1893fa863b8d67471f8152418a7"
+    },
+    "spot-yellow-10": {
+      "file": "spot-yellow-10-b-v1.opus",
+      "text": "Yellow tank at ten o'clock.",
+      "duration": 2.66,
+      "sha256": "1b70578160ba3416c47092e158c2b0eb414458ad53717b271e8bbb60b1fb8a22"
+    },
+    "spot-yellow-11": {
+      "file": "spot-yellow-11-b-v1.opus",
+      "text": "Yellow tank at eleven o'clock.",
+      "duration": 2.78,
+      "sha256": "6b1b2930aeadcf5cc7496e4605c534292fb2e12296d5c9f287e7c95d27ce58e3"
+    },
+    "spot-yellow-12": {
+      "file": "spot-yellow-12-b-v1.opus",
+      "text": "Yellow tank at twelve o'clock.",
+      "duration": 2.5,
+      "sha256": "ca6b21f190d533d3fdf71814e5688595ede86e338a84ce03b44cbbd95ad1ee57"
+    },
+    "route": {
+      "file": "route-b-v1.opus",
+      "text": "Roger. Orders received.",
+      "duration": 3.16,
+      "sha256": "12c3dde877d53f2c55df7222301f5dc372941a238170805963b95798a8bc05f8"
+    },
+    "turn": {
+      "file": "turn-b-v1.opus",
+      "text": "Fire when ready.",
+      "duration": 1.5,
+      "sha256": "a0dbc1675c4f95f343e5765eca9c3b6de088b537dc960c094e2e278f05d1da52"
+    },
+    "victory": {
+      "file": "victory-b-v1.opus",
+      "text": "Battle won! Good work, crew.",
+      "duration": 2.57,
+      "sha256": "9106e395cd1413a5c76a46cd78cd213b3f625f2cf3066fd29561939523068ebe"
+    }
+  },
+  "generation": {
+    "backend": "local CPU, offline",
+    "model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "fragments": {
+      "hurt": {
+        "text": "We're hit! Get us into cover!",
+        "sha256": "f1b15589d73e0ee7dbc7e5a975dfb66a780b2d6dfa050621d2923719b77fd92d",
+        "seed": 42
+      },
+      "critical": {
+        "text": "Bad hit! Get us out of here!",
+        "sha256": "0f80a4a45dbabf3893a1ec083a0da9165b949b62e61bbbfe57a98cb7cea8321e",
+        "seed": 42
+      },
+      "smoke": {
+        "text": "Smoke out!",
+        "sha256": "6bb16451c2a5d4a5ff4c4ba99fb407974d32fa29799dabe85b74f22a6f81fd80",
+        "seed": 42
+      },
+      "train": {
+        "text": "Train coming! Clear the tracks!",
+        "sha256": "31124f8d5459f9c7a17846f41e1ba74a692334c56e0da6bc4b837af0fc23b17f",
+        "seed": 42
+      },
+      "contact-red": {
+        "text": "Red tank.",
+        "sha256": "bdf8f7ff538344849bebc80d192ebcd8f88f13b5400e40a7025d4baad685b7e6",
+        "seed": 42
+      },
+      "contact-blue": {
+        "text": "Blue tank.",
+        "sha256": "54889afb5c549516a1f6ca133008c65f8d655a5452b3ea37b77a495d1e4c8e5c",
+        "seed": 42
+      },
+      "contact-yellow": {
+        "text": "Yellow tank.",
+        "sha256": "e20ea04edc6a5110d5a098b14fc37b02a604d8d5b7f4e2a399feb7251397ca93",
+        "seed": 42
+      },
+      "clock-12": {
+        "text": "At twelve o'clock.",
+        "sha256": "7b4368cd4889ef7b2ae93ab927a860271f1966624440c9f8c105a57641055d89",
+        "seed": 42
+      },
+      "clock-1": {
+        "text": "At one o'clock.",
+        "sha256": "2c3841a4242fe5c711281656c2d6dbbbea47b02565979bf3a457c087a4ca7724",
+        "seed": 42
+      },
+      "clock-2": {
+        "text": "At two o'clock.",
+        "sha256": "4bd055c1e890b0c8421fd3a1abd36d5848f9cd4a6eb742b054489bfb668bfe10",
+        "seed": 42
+      },
+      "clock-3": {
+        "text": "At three o'clock.",
+        "sha256": "aadb3199f5a02399317457f5e7a6ccb9cd12aec493df4188f8c2966c54d37795",
+        "seed": 42
+      },
+      "clock-4": {
+        "text": "At four o'clock.",
+        "sha256": "7e3fdae8a49cdb83acd3acaa00660cd61bcc8810095a5599e55b28247dafad8b",
+        "seed": 42
+      },
+      "clock-5": {
+        "text": "At five o'clock.",
+        "sha256": "22c1ba06ab54011feb4fbf49a20230dd4aa22e2d67831a7166ffe32590e2cb92",
+        "seed": 42
+      },
+      "clock-6": {
+        "text": "At six o'clock.",
+        "sha256": "feaaabd10eb6e36ca59dd535c861bdc32c6534abf5d579a57894547664062048",
+        "seed": 42
+      },
+      "clock-7": {
+        "text": "At seven o'clock.",
+        "sha256": "eb22a536eabc6c66a4d596a08842a0c8406135b06f5b73886a3c1149fc8aa0f2",
+        "seed": 42
+      },
+      "clock-8": {
+        "text": "At eight o'clock.",
+        "sha256": "3da7d84f9b4637bc6702788fd8bb016176904824a58cb64db5866581c24319b7",
+        "seed": 42
+      },
+      "clock-9": {
+        "text": "At nine o'clock.",
+        "sha256": "c2e8f97373f83f23dd3bf2e3efa1d0a0ea366f714bf231dc9d00f96ad7dbf639",
+        "seed": 42
+      },
+      "clock-10": {
+        "text": "At ten o'clock.",
+        "sha256": "cae6fdf8b985a0e7c942f6b069bd3d562b8819fe810503b642fec06b6f457789",
+        "seed": 42
+      },
+      "clock-11": {
+        "text": "At eleven o'clock.",
+        "sha256": "66d246df91f65cd78587452e0724193f9018be65f0b52e9cfdd2ee020b7b1882",
+        "seed": 42
+      },
+      "route": {
+        "text": "Roger. Orders received.",
+        "sha256": "93b4e4e2896045cb5747779bae5f2fcf88631e9252389d784e9c9b1e3f5bef4b",
+        "seed": 42
+      },
+      "turn": {
+        "text": "Fire when ready.",
+        "sha256": "d618ea0e95c52d80d438727d47763a296c34fb9cd8d0a9f532a8223766b94b73",
+        "seed": 42
+      },
+      "victory": {
+        "text": "Battle won! Good work, crew.",
+        "sha256": "23b4b898e102ab237d9b96f50a6b44e7425611e1f887e5d9815886f7167ebf59",
+        "seed": 42
+      }
+    }
+  }
+}
