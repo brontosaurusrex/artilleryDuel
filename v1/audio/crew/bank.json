@@ -321,6 +321,12 @@
       "text": "Yellow tank! Close range!",
       "duration": 2.22,
       "sha256": "0a9a9fd5ed8c3cf01ec2bcac4547987d44414672b9fd8c24b0425ba49919fb66"
+    },
+    "medic": {
+      "file": "medic-b-v1.opus",
+      "text": "I need a medic!",
+      "duration": 1.94,
+      "sha256": "bc7fcd8134ed1b4ade8ce2d31dfb6c7a08609f5b9fdb60f50feb2aa60860e309"
     }
   },
   "generation": {
@@ -336,6 +342,17 @@
         "text": "Bad hit! Get us out of here!",
         "sha256": "0f80a4a45dbabf3893a1ec083a0da9165b949b62e61bbbfe57a98cb7cea8321e",
         "seed": 42
+      },
+      "medic": {
+        "text": "I need a medic!",
+        "sha256": "09e412753f747a81e429795cd2bfd624389ec6ab6e9a0d5af35a48b08cb3077f",
+        "seed": 91,
+        "delivery": {
+          "text": "I... I NEED a MEDIC!",
+          "seed": 91,
+          "reference_filters": "rubberband=tempo=1.08:pitch=1.07",
+          "voice_filters": "vibrato=f=7.3:d=0.32,tremolo=f=6.1:d=0.12"
+        }
       },
       "smoke": {
         "text": "Smoke out!",
