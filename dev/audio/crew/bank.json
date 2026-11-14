@@ -297,6 +297,30 @@
       "text": "Battle won! Good work, crew.",
       "duration": 2.57,
       "sha256": "9106e395cd1413a5c76a46cd78cd213b3f625f2cf3066fd29561939523068ebe"
+    },
+    "move-ready": {
+      "file": "move-ready-b-v1.opus",
+      "text": "Driver ready. Awaiting orders.",
+      "duration": 3.26,
+      "sha256": "8c0f797632234e88f1cb0cab23409532ec311e6f20183d9412fdf77b9e0a18f5"
+    },
+    "close-red": {
+      "file": "close-red-b-v1.opus",
+      "text": "Red tank! Close range!",
+      "duration": 2.48,
+      "sha256": "5e8284edcd3b05ea651c17cd6b94050bf5472185028dae807b3245502357689c"
+    },
+    "close-blue": {
+      "file": "close-blue-b-v1.opus",
+      "text": "Blue tank! Close range!",
+      "duration": 2.28,
+      "sha256": "5353b08662add4553ceffdb9390078d1dc556836958261dbfd601b9e2ce1497a"
+    },
+    "close-yellow": {
+      "file": "close-yellow-b-v1.opus",
+      "text": "Yellow tank! Close range!",
+      "duration": 2.22,
+      "sha256": "0a9a9fd5ed8c3cf01ec2bcac4547987d44414672b9fd8c24b0425ba49919fb66"
     }
   },
   "generation": {
@@ -321,6 +345,41 @@
       "train": {
         "text": "Train coming! Clear the tracks!",
         "sha256": "31124f8d5459f9c7a17846f41e1ba74a692334c56e0da6bc4b837af0fc23b17f",
+        "seed": 42
+      },
+      "route": {
+        "text": "Roger. Orders received.",
+        "sha256": "93b4e4e2896045cb5747779bae5f2fcf88631e9252389d784e9c9b1e3f5bef4b",
+        "seed": 42
+      },
+      "turn": {
+        "text": "Fire when ready.",
+        "sha256": "d618ea0e95c52d80d438727d47763a296c34fb9cd8d0a9f532a8223766b94b73",
+        "seed": 42
+      },
+      "victory": {
+        "text": "Battle won! Good work, crew.",
+        "sha256": "23b4b898e102ab237d9b96f50a6b44e7425611e1f887e5d9815886f7167ebf59",
+        "seed": 42
+      },
+      "move-ready": {
+        "text": "Driver ready. Awaiting orders.",
+        "sha256": "c81ed416f8e1c073aae5f958da386e69f69e435f35858b18294b4cc98bacbea3",
+        "seed": 42
+      },
+      "close-red": {
+        "text": "Red tank! Close range!",
+        "sha256": "ffe4b48fff9eefc80d0c23a3c4fb92d0746e0f157defc79d8a7922991e511661",
+        "seed": 42
+      },
+      "close-blue": {
+        "text": "Blue tank! Close range!",
+        "sha256": "deb2c420048be181a2ad0d22d7edbdc2927098b696c73f69dad5646159a47a4b",
+        "seed": 42
+      },
+      "close-yellow": {
+        "text": "Yellow tank! Close range!",
+        "sha256": "d23494bf9d5a6957298dbc6c3a4b1905e33fa32c47ecb8a5dafc14822f2ec722",
         "seed": 42
       },
       "contact-red": {
@@ -396,21 +455,6 @@
       "clock-11": {
         "text": "At eleven o'clock.",
         "sha256": "66d246df91f65cd78587452e0724193f9018be65f0b52e9cfdd2ee020b7b1882",
-        "seed": 42
-      },
-      "route": {
-        "text": "Roger. Orders received.",
-        "sha256": "93b4e4e2896045cb5747779bae5f2fcf88631e9252389d784e9c9b1e3f5bef4b",
-        "seed": 42
-      },
-      "turn": {
-        "text": "Fire when ready.",
-        "sha256": "d618ea0e95c52d80d438727d47763a296c34fb9cd8d0a9f532a8223766b94b73",
-        "seed": 42
-      },
-      "victory": {
-        "text": "Battle won! Good work, crew.",
-        "sha256": "23b4b898e102ab237d9b96f50a6b44e7425611e1f887e5d9815886f7167ebf59",
         "seed": 42
       }
     }

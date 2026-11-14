@@ -1,0 +1,17 @@
+{
+  "title": "User-supplied shell impact recording",
+  "sourceFilename": "dragon-studio-explosion-sound-effect-425455.mp3",
+  "sourceSha256": "d73e6472214dc24f2d7a5c93a018a1610a5cc7650a50a3a0cf8b5533527cc8b1",
+  "generator": "tools/prepare_explosion_audio.py",
+  "edits": "Mono downmix, 2 ms start and 150 ms tail fades, -14 LUFS normalization; 48 kHz Opus at 96 kbps.",
+  "samples": [
+    {
+      "file": "explosion-v1.opus",
+      "duration": 2.9105,
+      "sampleRate": 48000,
+      "channels": 1,
+      "sha256": "58fa2e1685950f7dfb395aab1b73710d8a7cd6c0110ae5e316490f5fdd95a7fa",
+      "bytes": 40184
+    }
+  ]
+}
