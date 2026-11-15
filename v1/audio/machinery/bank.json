@@ -1,0 +1,107 @@
+{
+  "version": 2,
+  "source": "Original procedural mechanics/destruction; servo adapted from Servo_2_Panera by sinmente0987 via Pixabay.",
+  "generator": "tools/generate_machinery_audio.py",
+  "clips": {
+    "metal": {
+      "file": "metal-v1.opus",
+      "duration": 1.94,
+      "loop": true,
+      "sha256": "19fccf0605b75ba1008652b937dcf08c8227115e9771f1cfd0e3237f34763952"
+    },
+    "servo": {
+      "file": "servo-v2.opus",
+      "duration": 3.92,
+      "loop": true,
+      "sha256": "d51dc2320896ed5c061b51a966bac43e3ed193c97cfc65c5f95dcbdea5ad27bc"
+    },
+    "sand": {
+      "file": "sand-v1.opus",
+      "duration": 1.94,
+      "loop": true,
+      "sha256": "6d59329e09a8a3d139515a0fff36b6df61774bf23299088b2a42f5881f7cbc76"
+    },
+    "dirt": {
+      "file": "dirt-v1.opus",
+      "duration": 1.94,
+      "loop": true,
+      "sha256": "4b12db49031d92b8903fc59d1f331d98a697b95cb7938e508240c2300be445fa"
+    },
+    "gravel": {
+      "file": "gravel-v1.opus",
+      "duration": 1.94,
+      "loop": true,
+      "sha256": "5aad6096f6e5af056d19e6e0c49c6afcfb6c2bebe13538b9aa8a759e70ecd1a7"
+    },
+    "asphalt": {
+      "file": "asphalt-v1.opus",
+      "duration": 1.94,
+      "loop": true,
+      "sha256": "867ecd3eec896bb46a15021977f872cec841235be3476d641f0c6dcbba21bd9a"
+    },
+    "snow": {
+      "file": "snow-v1.opus",
+      "duration": 1.94,
+      "loop": true,
+      "sha256": "17715c93907e190ab1f553d55131bbda7cc72f6c227f58383e61b6ae41feb78b"
+    },
+    "wood": {
+      "file": "wood-v1.opus",
+      "duration": 1.94,
+      "loop": true,
+      "sha256": "cfe9a6797e3356c46275be0f21641e8cd1b16bf1951787d48dfd059f0e368b40"
+    },
+    "tree-1": {
+      "file": "tree-1-v1.opus",
+      "duration": 1.7,
+      "loop": false,
+      "sha256": "e88bc60b3c3538b54c719a8154899ee647c10d2b20a2664b9c99f19454b43d99"
+    },
+    "tree-2": {
+      "file": "tree-2-v1.opus",
+      "duration": 1.7,
+      "loop": false,
+      "sha256": "74d0b150245c445937cc22d7dc4d76f56bd55fb7179fafc250a52bef89be6b8f"
+    },
+    "tree-3": {
+      "file": "tree-3-v1.opus",
+      "duration": 1.7,
+      "loop": false,
+      "sha256": "023069d7cd7b48c7b0dc022b7332b6079ed58fbed3565610461aca4177f51f0e"
+    },
+    "house-1": {
+      "file": "house-1-v1.opus",
+      "duration": 2.5,
+      "loop": false,
+      "sha256": "6acfd47b9c344ad9d192c60b646e51b3efd1f1a065ca77642da0e651fe851f47"
+    },
+    "house-2": {
+      "file": "house-2-v1.opus",
+      "duration": 2.5,
+      "loop": false,
+      "sha256": "79d282696e68ee2dfdef857ecb3001f776e746e8148a73a32b7d84f004fc7731"
+    },
+    "house-3": {
+      "file": "house-3-v1.opus",
+      "duration": 2.5,
+      "loop": false,
+      "sha256": "9bf72822e847bd5faf75d81621fd7080a0f037cb44eb6be0657a3196580a2f53"
+    }
+  },
+  "servoSource": {
+    "title": "Servo_2_Panera",
+    "artist": "sinmente0987 (Freesound)",
+    "sourceUrl": "https://pixabay.com/sound-effects/technology-servo-2-panera-25665/",
+    "licenseUrl": "https://pixabay.com/service/license-summary/",
+    "sourceFilename": "freesound_community-servo_2_panera-25665.mp3",
+    "sourceSha256": "6eebee9392aee015b5ae9b472a293409d52bec10073fcd34faac7a44c5d86d5b",
+    "generator": "tools/prepare_servo_audio.py",
+    "trimSeconds": [
+      2.8,
+      6.4
+    ],
+    "playbackRate": 0.9,
+    "crossfadeSeconds": 0.08,
+    "edits": "Steady motor excerpt; 90% speed with matching lower pitch, mono, 50 Hz high-pass, 80 ms loop overlap, -25 LUFS/-4 dBTP; 48 kHz mono Opus at 64 kbps."
+  }
+}

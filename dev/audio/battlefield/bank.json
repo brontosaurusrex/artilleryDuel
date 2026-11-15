@@ -1,0 +1,145 @@
+{
+  "version": 1,
+  "source": "Original procedural ambience/effects; armor adapted from the user-supplied recording.",
+  "generator": "tools/generate_battlefield_audio.py",
+  "clips": {
+    "armor-1": {
+      "file": "armor-1-v4.opus",
+      "duration": 0.9415,
+      "loop": false,
+      "sha256": "e3080aeee6a642a3d70a6123ceae9b390d8100ed68e90dec678ae4f6d23fac3e"
+    },
+    "armor-2": {
+      "file": "armor-2-v4.opus",
+      "duration": 0.970438,
+      "loop": false,
+      "sha256": "3600d6633d2032eedc759ee4ad56560495889ab7a4cf37f67ac8f727fb4c8a24"
+    },
+    "armor-3": {
+      "file": "armor-3-v4.opus",
+      "duration": 0.918708,
+      "loop": false,
+      "sha256": "40cb6107465e02a28cf52ee01c92afc4fe429f16c1cb76226510e543d0e529ee"
+    },
+    "ricochet-1": {
+      "file": "ricochet-1-v1.opus",
+      "duration": 1.25,
+      "loop": false,
+      "sha256": "2bfd51d92fd3470c31d5c69dccbfb6c3fe1cde823e213000046c3c86095f53e0"
+    },
+    "ricochet-2": {
+      "file": "ricochet-2-v1.opus",
+      "duration": 1.25,
+      "loop": false,
+      "sha256": "684e84d4eadbc0695fbeb77e4e5c32eb7f0e59f37f5abc9a1878d6db0f263473"
+    },
+    "flyby-1": {
+      "file": "flyby-1-v1.opus",
+      "duration": 0.65,
+      "loop": false,
+      "sha256": "b22f8b104da67043951be218949ee63db16472ec7d2be8afdb9c098eb5359e1b"
+    },
+    "flyby-2": {
+      "file": "flyby-2-v1.opus",
+      "duration": 0.65,
+      "loop": false,
+      "sha256": "959d7d28aec08821e24cc6d69ca674c6044f50267aa72201bbdcc7c5247d5821"
+    },
+    "flyby-3": {
+      "file": "flyby-3-v1.opus",
+      "duration": 0.65,
+      "loop": false,
+      "sha256": "7f933bb7be178ef0c45ba987094906eb7d6c33c2e81c33b17070a067f8c25b8e"
+    },
+    "reload-1": {
+      "file": "reload-1-v1.opus",
+      "duration": 2.1,
+      "loop": false,
+      "sha256": "9b4e78a380b01f12125ed9bb05f62e0c12648a473fcc64aa43b282a74a6bfc19"
+    },
+    "reload-2": {
+      "file": "reload-2-v1.opus",
+      "duration": 2.1,
+      "loop": false,
+      "sha256": "5b6c12b22d23e9bc4d79f5f2222d2b4dee94c3476d7e1c48f9ae66c7fdb472a0"
+    },
+    "fire": {
+      "file": "fire-v1.opus",
+      "duration": 3.86,
+      "loop": true,
+      "sha256": "ca1a31b8b779a92ea9cdb6b1b798306a9ae204ea79396dc12b3dfe1fd9a8de19"
+    },
+    "leaves": {
+      "file": "leaves-v1.opus",
+      "duration": 5.86,
+      "loop": true,
+      "sha256": "1002c424db1455c4f0905d5ee34c6094c66bcf68e0a3d876b5f15e727733c797"
+    },
+    "water": {
+      "file": "water-v1.opus",
+      "duration": 5.86,
+      "loop": true,
+      "sha256": "37c19ce6bc738b0cb2337882f2e5f041ea38a2a5a19f39cd8a220de332f1f516"
+    },
+    "surf": {
+      "file": "surf-v1.opus",
+      "duration": 7.86,
+      "loop": true,
+      "sha256": "44cb8c07f43756ee3f8f14b586ea937153286b8fee7392125e5fba4947a8f5c0"
+    },
+    "wind": {
+      "file": "wind-v1.opus",
+      "duration": 5.86,
+      "loop": true,
+      "sha256": "94550d84240333451b015bbcf2bf59a46f80473cc95cc66011055d2bd71f92e0"
+    },
+    "bird-1": {
+      "file": "bird-1-v1.opus",
+      "duration": 2.7,
+      "loop": false,
+      "sha256": "85b1380ed689cfe10caff183e614dec151a35c259f5a7ed0d9181ede574891f9"
+    },
+    "bird-2": {
+      "file": "bird-2-v1.opus",
+      "duration": 2.7,
+      "loop": false,
+      "sha256": "258d4b9ad4518fce397406dc7140bc352badedeb426c9efda3802354f182f37d"
+    },
+    "gull-1": {
+      "file": "gull-1-v1.opus",
+      "duration": 2.8,
+      "loop": false,
+      "sha256": "8f68fb863a3ef902946d174b6164872889270d83b22d163f343dca672ed48713"
+    },
+    "gull-2": {
+      "file": "gull-2-v1.opus",
+      "duration": 2.8,
+      "loop": false,
+      "sha256": "f7f9dcff396c96419edf3f4eb006e9045df14c81b586de6ad9fdceb35c13ab03"
+    }
+  },
+  "armorSource": {
+    "sourceFilename": "daviddumaisaudio-sword-slash-with-metal-shield-impact-185433.mp3",
+    "sourceSha256": "2a738b9421347bc60f18e20c0e4c4f12ee764414a9fad8f58724705b43a3d5df",
+    "generator": "tools/prepare_armor_audio.py",
+    "trimSeconds": [
+      0.265,
+      1.2
+    ],
+    "playbackRates": [
+      1.0,
+      0.97,
+      1.025
+    ],
+    "thump": {
+      "duration": 0.1,
+      "frequencies": [
+        78,
+        142
+      ],
+      "decaySeconds": 0.025,
+      "mixWeight": 0.7
+    },
+    "edits": "Remove leading swish; mono, 1 ms attack/80 ms tail fades, 50 Hz high-pass, short 100 ms bass thump, -22 LUFS/-3.5 dBTP; 48 kHz mono Opus at 64 kbps."
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "title": "piranha_start",
+  "artist": "granconill (Freesound)",
+  "sourceUrl": "https://pixabay.com/sound-effects/city-piranha-start-76816/",
+  "licenseUrl": "https://pixabay.com/service/license-summary/",
+  "sourceFilename": "freesound_community-piranha_start-76816.mp3",
+  "sourceSha256": "a1b982ec9e324ef586276708d8e8e0285f99dfc09a5a1eb23024dd81af64a2dd",
+  "generator": "tools/prepare_tank_engine_audio.py",
+  "pitchRatio": 0.62,
+  "edits": "Startup 0\u20133.2 s, running 6\u201310 s; pitch down to 62% with original tempo restored, mono, 35 Hz high-pass/5.5 kHz low-pass, faded start tail/80 ms run loop overlap, normalized, 48 kHz Opus at 64 kbps.",
+  "clips": {
+    "start": {
+      "file": "diesel-start-v1.opus",
+      "duration": 3.215145833333333,
+      "loop": false,
+      "sha256": "4d3504202d1956bfae4c855ab3cc6ba02eb99b5c7cfc23a22b809da628436dad"
+    },
+    "run": {
+      "file": "diesel-run-v1.opus",
+      "duration": 3.9313333333333333,
+      "loop": true,
+      "sha256": "2f787290a958c817fc576dd07725d6f47af332390ad3ccfa558fa690ec73dfd8"
+    }
+  }
+}
