@@ -14,8 +14,8 @@
     <script>
       addEventListener('error',function(e){if(!document.documentElement.classList.contains('game-loading'))return;if(e.message||['SCRIPT','LINK'].includes(e.target?.tagName)){var p=document.querySelector('#game-loading p');if(p){p.hidden=false;p.textContent='Could not load the game. Please reload the page.'}}},true);
     </script>
-    <script type="module" crossorigin src="./assets/index-DMZ4OHmO.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-DrUawS9S.css">
+    <script type="module" crossorigin src="./assets/index-jPCICIob.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CJM8-Otc.css">
   </head>
   <body aria-busy="true">
     <div id="game-loading" role="status" aria-live="polite" aria-label="Loading game"><div><p hidden></p><div class="loading-pulse" aria-hidden="true"></div><noscript>Enable JavaScript to play.</noscript></div></div>
@@ -343,12 +343,6 @@
               />
               <small id="tuning-dof-note"></small>
 
-              <label for="tuning-projection"
-                >Projection<select id="tuning-projection">
-                  <option value="perspective">Perspective</option>
-                  <option value="orthographic">Orthographic</option>
-                </select></label
-              >
               <label for="tuning-lens"
                 >Lens · full-frame
                 <output id="tuning-lens-value" for="tuning-lens"></output
@@ -375,16 +369,21 @@
           </div>
           <div class="handoff" id="handoff">
             <div class="handoff-card" id="handoff-card">
-              <span class="eyebrow" id="handoff-label"
-                >TWO PLAYERS · ONE BATTLEFIELD</span
-              >
-              <p id="handoff-description">
-                Take turns. Read the wind.<br />Leave your mark on the
-                landscape.
-              </p>
-              <button class="primary-button" id="ready-button">
-                Begin duel <span aria-hidden="true">↗</span>
-              </button>
+              <span class="eyebrow">Choose a match</span>
+              <div role="group" aria-label="Match mode">
+                <button class="primary-button" id="ready-button" aria-describedby="free-for-all-description">
+                  Free-for-All <span aria-hidden="true">↗</span>
+                </button>
+                <p class="mode-description" id="free-for-all-description">
+                  Three tanks. Every tank fights for itself.
+                </p>
+                <button class="primary-button" id="outnumbered-button" aria-describedby="outnumbered-description">
+                  Outnumbered <span aria-hidden="true">↗</span>
+                </button>
+                <p class="mode-description" id="outnumbered-description">
+                  You play Red. Blue and Yellow both come after you.
+                </p>
+              </div>
               <button class="text-button" id="handoff-random">
                 Random biome <span aria-hidden="true">↗</span>
               </button>
@@ -396,8 +395,12 @@
               <h1 id="result-title"></h1>
               <p id="result-description"></p>
               <button class="primary-button" id="rematch">
-                Rematch <span aria-hidden="true">↗</span></button
-              ><button class="text-button" id="result-new">
+                Rematch <span aria-hidden="true">↗</span>
+              </button>
+              <button class="text-button" id="change-match-mode">
+                Change mode <span aria-hidden="true">↗</span>
+              </button>
+              <button class="text-button" id="result-new">
                 Random biome <span aria-hidden="true">↗</span>
               </button>
             </div>
